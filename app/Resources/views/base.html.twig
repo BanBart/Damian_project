@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+               <meta charset="UTF-8" />
+               <title>GamesCorner</title>
+               <meta name="keywords" content="AGH, Damian, Basta, Inżynieria internetu"  />
+               <meta name="description" content="Damian Basta - Strona informacyjna. 
+               Znajdziesz tutaj proramy, recenzje i artykuły mojego autorstwa."   />
+               <meta name="author" content="Damian Basta" />
+               <meta name="copyright" content="Damian Basta" />
+               <meta name="generator" content="PSPad / Notepad++" />
+        <!--   <meta http-equiv="refresh" content="1; url=http://demotywatory.pl" />     -->
+               <meta name="robots" csontent="index, follow" />
+               <link rel="stylesheet" href="style.css" type="text/css" />
+    {% block stylesheets %}          
+            {% stylesheets 'bundles/projectgamingcorner/css/style.css' filter='cssrewrite'%}
+                <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+            {% endstylesheets %}
+        {% endblock %}
+
+  </head>
+  
+  <body class= "body">
+	
+            {% block mainHeader %}
+                
+            {% endblock mainHeader %}			
+	
+	
+
+	{% block body %}
+            
+        {% endblock body %}
+	
+	{% block aside %}
+            
+        {% endblock aside %}
+	
+	
+	<footer class = "mainFooter">
+	<p> Copyright &copy; <a href="#" title= "dbasta 2014"> http://www.metal.agh.edu.pl/~dbasta/ </a> </p>
+	</footer>
+</body>
+
+ 
+  </html>

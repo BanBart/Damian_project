@@ -1,0 +1,20 @@
+{% for article in articles %}
+    <article class = "damianPost">
+				<header>
+					<h2><a href="#">{{ article.title }}</a></h2>
+				</header>
+				
+				<footer>
+					<p class = "postInfo"> 16.10.2014</p>
+				</footer>
+				
+				<p>{{ article.source }}</p>
+                                
+					
+				<footer>
+					<p class = "postInfo"> Pozdr. Damian</p>
+				</footer>
+					
+				
+    </article>
+{% endfor %}

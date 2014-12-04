@@ -1,0 +1,367 @@
+body {
+	background-image: url(../images/bg4.jpg);
+	color: #000305;
+	font-size: 87.5%;
+	font-family: Arial, 'Lucida Sasn Unicode';
+	line-height:1.5;
+	text-align: left;
+}
+a {
+	text-decoration: none; /*usuwa podkreĹlenia linkĂłw */
+	
+}
+a:link, a:visited{
+	color: #6699ff;
+}
+a:hover, a:active{
+	background-color: #6699ff;
+	color: #FFF;
+	border-radius: 3px;	
+	-moz-border-radius: 3px;	
+	-webkit-border-radius: 3px;	
+}
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+.mainHeader img {
+	width: 30%;
+	height: auto;
+	margin: 3%,0; /*Margines wysokoĹÄ , szerokoĹÄ */
+}
+
+.imgHeader img{
+	width: 100%;
+	margin-top: 2%;
+}
+
+.mainHeader nav{
+	background-color: #AFBDCB;
+	height: 40px;
+	border-radius: 5px;	/*zaokroglanie rogĂłw*/
+	-moz-border-radius: 5px;	/*zaokroglanie rogĂłw w mozzili*/
+	-webkit-border-radius: 5px;	/*zaokroglanie rogĂłww webkit */
+	
+}
+.mainHeader nav ul{
+	list-style: none;
+	margin: 0 auto;
+	position: absolute;
+	
+}
+
+.mainHeader nav ul li{
+	font-weight: bold;
+	list-style: none;
+	float: left;
+	display: block;
+	position: relative;
+
+}
+
+
+
+.mainHeader nav a:link,.mainHeader nav a:visited {
+	color: #FFF;
+	display: block;
+	padding: 10px 25px;  /*rozrzut  height: 10px;*/
+	height: 20px;
+	border-left: 0px solid black;
+	border-right: 0px solid black;
+}
+
+.subMenu {
+	list-style:none;
+	float: left;
+	background-color: black;
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	padding:0;
+	overflow: hidden;
+}
+.subMenu  li{
+		background-color: #666;
+	
+		width: 135%;
+		border-left: 1px solid grey;
+		border-right: 1px solid grey;
+		border-bottom: 1px solid grey;
+		border-top: 1px;	/*zaokroglanie rogĂłw*/
+		-moz-border-radius: 0px;	/*zaokroglanie rogĂłw w mozzili*/
+		-webkit-border-radius: 0px;
+}
+
+.mainHeader nav :hover > .subMenu{
+	height: auto;
+	padding:0;
+	overflow: visible;
+	opacity: 1;
+	background-color: #666;
+	text-shadow: none; /*usuwanie text shadowsĂłw*/
+	/* SprawdziÄ ukĹad kolorĂłw przy np #color: red; lub #color: #FFF; bo coĹ sie skopaĹo z klamrami*/ 
+}
+
+
+.mainHeader nav a:hover, .mainHeader nav a:active, 
+.mainHeader nav .active a:active, .mainHeader nav .active a:visited{
+	background-color: #6699ff;
+	text-shadow: none; /*usuwanie text shadowsĂłw*/
+	/* SprawdziÄ ukĹad kolorĂłw przy np #color: red; lub #color: #FFF; bo coĹ sie skopaĹo z klamrami*/  
+}
+
+.mainHeader nav ul li a{
+	border: none;
+	outline: 0;
+}
+
+.rv  a
+{
+height: 200%;
+}
+
+.mainContent {
+	
+	line-height: 25px;
+	border-radius: 5px;	/*zaokroglanie rogĂłw*/
+	-moz-border-radius: 5px;	/*zaokroglanie rogĂłw w mozzili*/
+	-webkit-border-radius: 5px;	/*zaokroglanie rogĂłww webkit */
+	/*ukrywa przerwÄ po danym obszarze, pozawala dokĹadniej formatowaÄ obszar (waĹźne przy nachodzeniu na siebie wielu kontenerĂłw)*/
+	/* zdecydowaÄ czy wywaliÄ  overflow: hidden;*/
+}
+.content {
+	
+	width: 70%;
+	float: left; /*zawsze musi sie przesuwaÄ w lewo, Ĺźeby pomieĹci reszte po prawej*/
+	border-radius: 5px;	/*zaokroglanie rogĂłw*/
+	-moz-border-radius: 5px;	/*zaokroglanie rogĂłw w mozzili*/
+	-webkit-border-radius: 5px;	/*zaokroglanie rogĂłww webkit */
+}
+.topContent{
+	background-color: #FFF;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top:2%;
+}
+.damianPost{
+	color: #424A7C;
+	background-color: #FFF;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top:2%;
+}
+.konradPost{
+	color: #424A7C;
+	background-color: #FFF;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top:2%;
+}
+
+.bottomContent{
+	background-color: #FFF;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top:2%;/*sprawdzic dlaczego zle sie dopasowuja powinno byc 2%*/
+}
+
+.scrn img{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: center;
+}
+.scrn2 img{
+	width: 45%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: center;
+	border-radius: 10px;	/*zaokroglanie rogĂłw*/
+	-moz-border-radius: 10px;	/*zaokroglanie rogĂłw w mozzili*/
+	-webkit-border-radius: 10px;	/*zaokroglanie rogĂłww webkit */
+}
+
+.postInfo{
+	font-style: italic;
+	color: grey;
+	font-size: 90%;
+}
+.pTitle{
+	font-style: italic;
+	font-size: 120%;
+	color: #6699ff;
+}
+.grade{
+	font-style: italic;
+	color: #003366;
+}
+.sumaryPlus{
+	font-style: italic;
+	font-weight: bold;
+	color: #006699;
+	font-size: 95%;
+}
+.sumaryMinus{
+	font-style: italic;
+	font-weight: bold;
+	color: #ff6633;
+	font-size: 95%;
+}
+
+.topSideBar{
+	width: 22.5%;
+	float: left;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	background-color: #DFF0FF;
+	margin-top:1.5%; /*sprawdzic dlaczego zle sie dopasowuja powinno byc 2%*/
+	margin-left:1.5%;
+	padding: 2% 3%;
+
+	
+	
+}
+
+.middleSideBar{
+	width: 22.5%;
+	float: left;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	background-color: #DFF0FF;
+	margin-top:1.5%;
+	margin-left:1.5%;/*sprawdzic dlaczego zle sie dopasowuja powinno byc 2%*/
+	/*marginy mozna zapisywac np.		 margin: 2% 0% 2% 3%		czyli top 2% right 0% bottom 2% left */
+	padding: 2% 3%;
+
+}
+
+.bottomSideBar{
+	width: 22.5%;
+	float: left;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	background-color: #DFF0FF;
+	margin-top:2%;
+	margin-left:1.5%;
+	padding: 2% 3%; /* 2% od gĂłry, 3% od lewej + 3% od prawej */
+
+	
+	
+}
+.mainFooter{
+	width: 100%; /* czyli dopasowuje do 100% zawartoĹci kontenera */
+	height: 40px;
+	float: left;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	background-color: #AFBDCB;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
+
+.mainFooter p {
+	width: 90%;
+	float: left;
+	margin: 1% auto;
+	margin-left: 3%;
+	color: #FFF;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 1000px)
+{
+	.body {						/*zmieniam na 98 % Ĺźeby wykorzystac miejsce w maĹym oknie*/
+			width: 98%;
+			font-size: 96%;
+			
+		  }
+		  
+	.mainHeader img {
+	width: 100%;
+	height: auto;
+	margin: 3%,0; /*Margines wysokoĹÄ , szerokoĹÄ */
+	}
+
+	.mainHeader nav{
+	
+		height: 240px;	
+	}
+	.mainHeader nav ul{
+		padding-left: 0;
+	}
+
+
+	.mainHeader nav ul li{
+		width: 100%;
+		text-align:center;
+	}
+
+	.mainHeader nav a:link,.mainHeader nav a:visited {
+		padding: 10px 25px;  /*rozrzut  height: 10px;*/
+		height: 20px;
+		display: block;
+		
+	}
+	
+	
+	.mainHeader nav :hover > .subMenu{
+		opacity: 0;
+		height: 0;
+		padding:0;
+		overflow: hidden;
+	}
+	
+	.postInfo{
+	display: none;
+	}
+
+	.content {
+		
+		width: 100%;
+		float: left; /*zawsze musi sie przesuwaÄ w lewo, Ĺźeby pomieĹci reszte po prawej*/
+		border-radius: 5px;	/*zaokroglanie rogĂłw*/
+		-moz-border-radius: 5px;	/*zaokroglanie rogĂłw w mozzili*/
+		-webkit-border-radius: 5px;	/*zaokroglanie rogĂłww webkit */
+		margin-top: 2%;
+	}
+	.topContent{
+		background-color: #FFF;
+		border-radius: 5px;	
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		padding: 3% 5%;
+		margin-top:2%;
+	}
+
+	.bottomContent{
+		background-color: #FFF;
+		border-radius: 5px;	
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		padding: 3% 5%;
+		margin-top:2%;
+	}
+
+	.topSideBar, .middleSideBar, .bottomSideBar{
+		width: 94%;
+		margin:2% 0 1% 0;
+		padding: 2% 3%;
+	}
+
+
+}

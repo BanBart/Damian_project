@@ -1,0 +1,7 @@
+project_gaming_corner_homepage:
+    path:     /
+    defaults: { _controller: ProjectGamingCornerBundle:Basic:index }
+
+project_gaming_corner_reviews:
+    path:   /reviews
+    defaults: { _controller: ProjectGamingCornerBundle:Basic:review }

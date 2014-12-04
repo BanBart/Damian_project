@@ -1,0 +1,4 @@
+project_gaming_corner:
+    resource: "@ProjectGamingCornerBundle/Resources/config/routing.yml"
+    prefix:   /
+

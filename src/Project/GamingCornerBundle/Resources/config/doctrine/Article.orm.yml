@@ -1,0 +1,13 @@
+Project\GamingCornerBundle\Entity\Article:
+    type: entity
+    name: article
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        title:
+            type: string
+            length: 255
+        source:
+            type: text

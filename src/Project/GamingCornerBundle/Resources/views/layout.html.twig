@@ -1,0 +1,197 @@
+{% extends '::base.html.twig' %}
+{% block mainHeader %}
+<header class = "mainHeader">
+                {% image '@ProjectGamingCornerBundle/Resources/public/images/logotest.png' %}
+                    <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+		
+		<nav><ul>
+			<li class= "active"><a href="{{ path('project_gaming_corner_homepage')}}">Nowości</a></li>
+			
+			<li><a href="{{ path('project_gaming_corner_reviews')}}">Recenzje</a>
+				<ul class = "subMenu">
+					<li class= "new"><a href="reviews.html">Najnowsze</a></li>
+					<li class= "arch"><a href="#">Archiwum</a></li>
+					<li class= "writers"><a href="#">Recenzenci</a></li>	
+				</ul>
+			</li>
+			
+			<li><a href="#">Premiery</a>
+			<ul class = "subMenu">
+					<li class= "pc"><a href="#">PC</a></li>
+					<li class= "ps1"><a href="#">Książki</a></li>			
+				</ul>
+			</li>
+			
+			<li><a href="#">Sprzęt</a>
+				<ul class = "subMenu">
+					<li class= "akc"><a href="#">Akcesoria</a></li>
+					<li class= "ins"><a href="#">Podzespoły</a></li>
+					<li class= "ps2"><a href="#">Konsole</a></li>
+					<li class= "mobile"><a href="#">Przenośne</a></li>				
+				</ul>
+			</li>	
+			
+			<li><a href="#">Filmy</a>
+				<ul class = "subMenu">
+					<li class= "al"><a href="#">Wszystkie</a></li>	
+					<li class= "gp"><a href="#">Gameplay</a></li>	
+					<li class= "rv"><a href="#">Recenzja Video</a></li>				
+				</ul>
+			</li>
+			
+			<li><a href="#">Galeria</a></li>
+		</ul></nav>
+    </header>
+    	<div class = "imgHeader">
+		
+                {% image '@ProjectGamingCornerBundle/Resources/public/images/topimg2.jpg' %}
+                    <img src="{{ asset_url }}" alt="Example" />
+                {% endimage %}
+	</div>
+{% endblock mainHeader %}
+
+{% block body %}
+    
+    <div class = "mainContent">
+		<div class = "content">
+		{% block article %}
+                    {{ render(controller('ProjectGamingCornerBundle:Article:index'))}}
+			{#<article class = "damianPost">
+				<header>
+					<h2><a href="#">Nowa recenzja!</a></h2>
+				</header>
+				
+				<footer>
+					<p class = "postInfo"> 16.10.2014</p>
+				</footer>
+				
+				
+					<p>
+					Dziś w <i>Gaming Corner</i> pojawia się, a jakże nowa recenzja!
+					</p>
+					<p>
+					Tym razem Konrad zaserwował Nam materiał z ciekawej, niedawno wydanej w Polsce turówki Space Hulk
+					</p>
+					<p>
+					Serdecznie zapraszam do działu recenzje oraz życzę miłej lektury!
+					</p>
+					
+					<h2 class = "scrn2">
+						<a href="reviews.html">
+						<img src="scrn/sh/logo.jpg" alt="Tu powinien byc obraz przepraszamy"/>
+						</a>
+					</h2>
+					
+				<footer>
+					<p class = "postInfo"> Pozdr. Damian</p>
+				</footer>
+					
+				
+			</article >	
+			
+			<article class = "konradPost">
+				<header>
+					<h2><a href="#">Pierwsze wrażenia z The Evil Within :</a></h2>
+				</header>
+				
+				<footer>
+					<p class = "postInfo"> 15.10.2014</p>
+				</footer>
+				
+				
+					
+					<b>Na plus :</b>
+					<p>- świetny klimat i fabuła, coś bardzo oryginalnego, i takiego innego niż kolejne RE</p>
+					<p>- wreszcie prawdziwy SURVIVAL HORROR, gra jest straszna, a każda kulka i apteczka na wagę złota, z elementami skradania zgrywa się to znakomicie. Gra ma o wiele więcej wspólnego z prawdziwym horror experience nawet niż pierwszy dead space, a to już świetnie</p>
+					<p>- elementy skradania, które, wbrew pozorom, pasują do gry</p>
+					<p>- bardzo ładna i "brudna" grafika, designerska uczta dla oczu</p>
+					<p>- bardzo wyśrubowany poziom trudności</p>
+					<p>- zaskakująco dobry pomysł z stałym 30 fps - ja tego nie czuję, a to z pewnością działa na płynność gry, dzięki czemu obraz nigdy nie spowalnia</p>
+					
+					
+
+					<b>Minusy :</b>
+
+					<p>- WINIETA ! Po prostu w głowie mi się nie mieści, jak w 2014 roku, gra "wielkiego" Shinji Mikamiego, ojca serii Resident Evil, może być tak leniwym portem na PC, żeby gra miała PASY na górze i dole ekranu, których nie da się wyłączyć inaczej niż z konsoli developerskiej - żałosne, zastanawiam się, czy uciąć za to grze punkt, czy dwa, bo to naprawdę przeszkadza w grze, przynajmniej mi	</p>
+					<p>- przekłamane wymagania sprzętowe, na ultra i włączonych bajerach cały czas gra chodziła idealnie płynnie, jedyne co wyłączyłem to odbicia, bo modele wyglądają wtedy jak polane olejkiem do ciała ;p	</p>
+					<p>- standard w każdym Survivalu, czyli raczej ślamazarny system celowania i strzelania... ale do tego to już chyba tylko zostaje się przyzwyczaić, jedynie Dead Space 3 się wybijał pod tym kątem ;p	</p>
+					<p>- miejscami gra jest dezorientująca i nie wiadomo, co zrobić - trzeba albo się domyślić, albo zdać na zdrowy rozsądek, albo wręcz "wpaść" na skrypt z rozwiązaniem problemu ;P	</p>
+
+					
+					
+					<p>
+					Recenzja The Evil Within pojawi się już niedługo!
+					</p>
+					
+
+				<footer>
+					<p class = "postInfo"> Konrad</p>
+				</footer>
+					
+				
+			</article >	
+			
+			
+			<article class = "damianPost">
+				<header>
+					<h2><a href="#">Witam!</a></h2>
+				</header>
+				
+				<footer>
+					<p class = "postInfo"> "Nie czekaj. Pora nigdy nie będzie idealna." Napoleon Hill</p>
+				</footer>
+				<footer>
+					<p class = "postInfo"> 11.10.2014</p>
+				</footer>
+				
+				
+					<p>
+					Dziś startuje portal <i>Gaming Corner</i> poświęcony grom, sprzętowi do gier, oraz wszystkim graczom!
+					</p>
+					<p>
+					Jest to strona, którą przygotowuje na moje zajęcia projektowe z przedmiotu Inżynieria internetu. Strona nie jest jeszcze ukończona, można nawet rzec, że jest w powijakach. Dochodzę jednak do wniosku, że czas ją opublikować w czeluściach internetu!
+					</p>
+					<p>
+					Z góry proszę o wyrozumiałość i raczej nie spodziewajcie się cudów! Mam nadziejęz że z czasem wszystkie strony poboczne zostaną rozwinięte w zadowalający stopniu.
+					</p>
+					
+				<footer>
+					<p class = "postInfo"> Pozdr. Damian</p>
+				</footer>
+					
+				
+			</article>#}
+                        {% endblock article %}
+		</div>
+	</div>
+    
+{% endblock body %}
+
+
+{% block aside %}
+<aside class= "topSideBar">
+		<article>
+			<h2>Witam w Gaming Corner!</h2>
+			<p>Jest to strona, którą tworze specjalnie na potrzeby przedmiotu Inżyniera Internetu. Mam nadzieję, że pomimo, iż to tylko projekt, każdy znajdzie na niej coś ciekawego dla siebie.   </p>
+		</article>
+	</aside>
+	
+	<aside class= "middleSideBar">
+		<article>
+			<h2>Recenzent Konrad Ochniowski!</h2>
+			<p>Teksty recenzji dla Gaming Corner zgodził się pisać mój dobry kolega student UJ Konrad! mam nadzieję, że umilą wasz dzień przy okazji dostarczając rzetelnie zebranych informacji</p>
+			<p class = "postInfo">Witamy na pokładzie!</p>
+		</article>
+	</aside>
+	
+	<aside class= "bottomSideBar">
+		<article>
+			<h2>Plan rozwoju!</h2>
+			<p>Następnym punktem rozwoju Gameing Corner będzie:</p>
+			<p>Zapełnienie stron pobocznych oraz stworzenie galerii</p>
+			<p class = "postInfo">W kolejnych tygodniach wprowadzenie rejestracji użytkowników!</p>
+			
+		</article>
+	</aside>            
+{% endblock aside %}
